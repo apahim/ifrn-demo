@@ -17,6 +17,7 @@ def root():
     LOG.info(f'[{request.method}] {request.url}')
     return jsonify(
         {
+            'message': 'Hello IFRN!',
             'hostname': platform.node(),
         }
     ), 200
