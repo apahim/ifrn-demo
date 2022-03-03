@@ -7,7 +7,7 @@ Demo Web Application
 To execute the application from Docker, run:
 
 ```bash
-$ docker run --rm -it -p 8080:8080 docker.io/apahim/cloudy:ifrn
+$ docker run --rm -it -p 8080:8080 docker.io/apahim/cloudy:ifrn-v1
 ```
 
 ## Develop
