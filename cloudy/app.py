@@ -25,6 +25,7 @@ def root():
         {
             'hostname': platform.node(),
             'database': record,
+            'message': 'Hello IFRN!',
         }
     ), 200
 
