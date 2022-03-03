@@ -21,7 +21,7 @@ class FakeCursor:
         pass
 
     def fetchone(self):
-        return str(self.details)
+        return self.details.args
 
 
 class Database:
