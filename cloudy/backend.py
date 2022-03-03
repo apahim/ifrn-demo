@@ -6,7 +6,7 @@ import psycopg2
 DB_USERNAME = os.environ.get("database-user", "postgres")
 DB_PASSWORD = os.environ.get("database-password", "postgres")
 DB_NAME = os.environ.get("database-name", "postgres")
-DB_HOST = os.environ.get("database-host", "127.0.0.1")
+DB_HOST = os.environ.get("database-host", "postgresql.ifrn-demo.svc.cluster.local")
 DB_PORT = os.environ.get("database-port", "5432")
 
 
