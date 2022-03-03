@@ -23,5 +23,6 @@ setup(name='cloudy',
       install_requires=[
           'Flask~=2.0',
           'gunicorn~=20.1',
+          'psycopg2-binary~=2.9',
       ],
       )
