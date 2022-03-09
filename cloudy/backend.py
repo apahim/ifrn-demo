@@ -49,9 +49,3 @@ class Database:
         if self._conn is not None:
             self._conn.close()
             self._conn = None
-
-
-with Database() as db:
-    db.execute("SELECT version();")
-    record = db.fetchone()
-    print(record)
