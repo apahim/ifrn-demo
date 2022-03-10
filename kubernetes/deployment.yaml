@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudy
+  labels:
+    app: cloudy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloudy
+  template:
+    metadata:
+      labels:
+        app: cloudy
+    spec:
+      containers:
+      - name: api
+        image: docker.io/apahim/cloudy:ifrn-demo-1.0.0
+        ports:
+        - containerPort: 8080
